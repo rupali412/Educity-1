@@ -1,0 +1,239 @@
+nav{
+    width: 100%;
+   /* background-color: #333;*/
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+.logo{
+    width: 180px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.darknav{
+    background: #091157;
+    transition: 0.5s;
+}
+.menui{
+    display: none;
+}
+ul li button{
+    outline: none;
+    padding: 4px 4px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    height: 2rem;
+    background-color: #e7e8f3f3;
+    font-size: 18px;
+}
+.model{
+    width: 100%;
+    min-height: 100%;
+    background-color: #01020854;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: none;
+}
+.model2{
+    width: 100%;
+    min-height: 100%;
+    background-color: #01020854;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: none;
+}
+.register{
+    width: 400px;
+    height: 350px;
+    position: fixed;
+    background-color: #fff;
+    top: -50%;
+    left: 50%;
+    transition: 0.3s;
+    transform:translate(-50%,-50%) ;
+}
+.register input{
+    position: absolute;
+    width: 290px;
+    height: 2rem;
+    border: none;
+    outline: none;
+    left: 3.5rem;
+    background-color: #dbd6d6a4;
+    padding-left: 10px;
+}
+.button01{
+    position: absolute;
+    left: 3.5rem;
+    width: 290px;
+    height: 1.8rem;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #7884f5;
+    outline: none;
+    border: none;
+    top: 18.5rem;
+
+}
+.button01:hover{
+    cursor: pointer;
+    background-color: #5061f7;
+}
+.inp4{
+position: absolute;
+top: 5rem;
+}
+.inp5{
+    position: absolute;
+    top: 8rem;
+}
+.inp6{
+    position: absolute;
+    top: 11rem;
+}
+.inp7{
+    position: absolute;
+    top: 14rem;
+}
+.register h3{
+    position: absolute;  
+    top: 1.5rem; 
+    left: 7.5rem; 
+    font-size: 24px;
+}
+.login{
+    background-color: white;
+    width: 400px;
+    height: 320px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transition: 0.3s;
+    transform: translate(-50%,-50%);
+}
+.show{
+    display: block;
+}
+.showW1{
+    display: block;
+}
+.showlogin{
+    position: fixed;
+    top: 50%;
+}
+.showregister{
+    position: fixed;
+    top: 50%;
+}
+.login h3{
+    position: absolute;
+    top: 1.5rem;
+    left: 8rem;
+    font-size: 24.5px;
+}
+.in1{
+    position: absolute;
+    top: 6rem;
+}
+.in2{
+    position: absolute;
+    top: 9rem;
+}
+.button0{
+    width:270px ;
+    top: 15rem;
+    position: absolute;
+    left:4.3rem ;
+    height: 1.5rem;
+    border:none ;
+    outline: none;
+    font-size: 15px;
+    background-color: #5060f3;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.button0:hover{
+    background-color: #162286ec;
+    cursor: pointer;
+}
+span{
+    position: absolute;
+    right: 13px;
+    top: 8px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.login p{
+    position: absolute;
+    top: 12.5rem;
+    left: 13.7rem;
+    color: #212ea0;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.login input{
+    color: black;
+    background-color: #6664642d;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 4.3rem;
+    width: 270px;
+    height: 2rem;
+}
+ul li button:hover{
+    background-color: rgb(208, 247, 247);
+    cursor: pointer;
+}
+@media (max-width:1000px){
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+@media(max-width:840px){
+    nav{
+        padding: 15px 0;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0px;
+        background: #212ea0;
+        z-index: -1;
+        bottom: 0;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .menui{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+    .hide-mob-menu{
+        right: -200px;
+    }
+    
+}
